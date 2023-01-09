@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="flashcard.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+</head>
+<body>
+   <div class="container">
+    <header>
+      <h1>Flascards</h1>
+      <div class="btn">
+        <button class="addcard" onclick="addcards()">Add card</button>
+        <button class="delcard" onclick="closeAll()">Del Cards</button>
+      </div>
+    </header>
+    <section class="card">
+      <div class="form">
+      <h2>Create Flashcard</h2>
+      <label for="Question">Question</label><br>
+      <input type="text" id="ques"><br>
+      <label for="">Answer</label><br>
+      <input type="text" id="anser"><br>
+      <button class="btnform save" onclick="addviewcard()">Save</button>
+      <button class="btnform close" onclick="closecard()">Close</button>
+      </div>
+    </section>
+    <section class="viewcard">
+    <!-- <div class="formview">
+      <a href=""><i class="fas fa-times"></i></a>
+      <label for="">question</label><br>
+      <input type="text" class="qes"><br>
+      <label for="">answer</label>
+      <input type="text">
+    </div> -->
+  
+    </section>
+   </div>
+<script src="flashcards.js"></script>
+</body>
+</html>
