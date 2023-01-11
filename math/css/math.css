@@ -1,0 +1,161 @@
+*{
+  padding:0;
+  margin: 0;
+}
+
+body{
+  font-family: 'Luckily';
+  background-color: #e6e6ea;
+}
+
+.container{
+  padding:20px;
+  overflow: hidden;
+  background-color: #fe4a49;
+}
+
+.container h1{
+  float: left;
+  margin-left: 10%;
+  color: white;
+}
+.container ul{
+  list-style-type: none;
+  font-size: 20px;
+  margin-left:60% ;
+
+}
+.container li{
+  margin-top:10px;
+  float: left;
+  padding:0 20px 0 20px;
+}
+.container a{
+  text-decoration: none;
+  color:white;
+}
+
+.current  a::after{
+  content:'_';
+  background-color: white;
+  font-size: 4px;
+  display: block;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns:82% 18%;
+  
+}
+.equation{
+  font-size: 65px;
+  background-color: white;
+  border-radius:3px;
+  text-margin:center;
+  padding-top: 15%;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right:10px;
+}
+.equation h1{
+  display: inline;
+  padding: 20px;
+  
+}
+
+.answer-options{
+  font-size: 67px;
+  margin-right:10px;
+}
+
+.answer-options h1 {
+  cursor:pointer;
+  color:whitesmoke;
+  border-radius: 3px;
+  text-align:center;
+  width:100%;
+}
+#option1{
+  background-color: #fe4a49;
+  transition: 1s;
+
+}
+#option1:hover{
+  color:#fe4a49;
+  background-color: white;
+  }
+#option2{
+  background-color: #2ab7ca;
+  transition: 1s;
+}
+#option2:hover{
+  color:#2ab7ca;
+  background-color: white;
+}
+#option3{
+  background-color: #fed766;
+  transition: 1s;
+}
+#option3:hover{
+  color:#fed;
+  background-color: white;
+}
+
+@media only screen and (max-width: 768px){
+  .container h1{
+    font-size: 25px;
+  }
+  .container a{
+    font-size: 15px;
+    
+  }
+  .current  a::after{
+  content:'_';
+  background-color: white;
+  font-size: 2px;
+  display: block;
+}
+.container ul{
+  list-style-type: none;
+  font-size: 20px;
+  margin-left:40% ;
+
+}
+.wrapper h1{
+  font-size: 50px;
+}
+}
+@media only screen and (max-width:480px){
+  .container{
+    display:grid;
+    grid-template-rows: repeat(2,auto);
+    justify-content: center;
+    align-items: center;
+  }
+  .container ul{
+    display:flex;
+    transform: translateX(-50%);
+  }
+ .container h1{
+ font-size: 20px;
+ text-align: center;
+ }
+ .container a{
+  font-size: 15px;
+ }
+ .wrapper{
+  display: grid;
+  grid-template-columns: none;
+  grid-template-rows: 200px 200px;
+   justify-content: center;
+ }
+
+ .answer-options{
+  display: flex;
+  margin-top: 20px;
+ }
+ .answer-options h1{
+  height: 30%;
+  width: 40%;
+ }
+}
